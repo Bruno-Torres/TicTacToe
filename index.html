@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Kumbh+Sans:wght@100..900&family=Mogra&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="game-status">Tic-Tac-Toe</h1>
+    <div class="board">
+        <div class="cell row-1 col-1"></div>
+        <div class="cell row-1 col-2"></div>
+        <div class="cell row-1 col-3"></div>
+        <div class="cell row-2 col-1"></div>
+        <div class="cell row-2 col-2"></div>
+        <div class="cell row-2 col-3"></div>
+        <div class="cell row-3 col-1"></div>
+        <div class="cell row-3 col-2"></div>
+        <div class="cell row-3 col-3"></div>
+    </div>
+    <button class="restart-button">Restart</button>
+    <dialog class="start-dialog">
+        <div class="container">
+            <h1>Tic-Tac-Toe</h1>
+            <div class="players-container">
+                <div class="input-container">
+                    <input type="text" id="p1-name" name="p1-name" placeholder="Player 1">
+                    <br>
+                    <span class="player-symbol">X</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="p2-name" name="p2-name" placeholder="Player 2">
+                    <br>
+                    <span class="player-symbol">O</span>
+                </div>
+            </div>
+            <div class="start-button-container">
+                <button class="start-button">Start</button>
+            </div>
+        </div>
+    </dialog>
+    <script src="game.js"></script>
+</body>
+</html>
